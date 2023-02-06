@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.box{
+    background-color: red;
+    font-size: 40px;
+    color: white;
+    display: none;
+}
+
+
+@media (max-width:300px){
+    #box-1{
+        display: block;
+        background-color: blueviolet;
+    }
+}
+@media (min-width:301px)and (max-width:500px){
+    #box-2{
+        display: block;
+        background-color: rgb(73, 226, 43);
+    }
+}
+@media (min-width:501px)and (max-width:900px){
+    #box-3{
+        display: block;
+        background-color: rgb(226, 125, 43);
+    }
+}
+@media (min-width:901px){
+    #box-4{
+        display: block;
+        background-color: blue;
+    }
+}
+    </style>
+    
+<div class="box" id="box-1">im a small mobile screen startts from 0 px ends at 300px</div>
+<div class="box" id="box-2">im a tab screen startts from 301 ends at 500px</div>
+<div class="box" id="box-3">im a desktop screen startts from 501 ends at 900</div>
+<div class="box" id="box-4">im a large screen screen startts from  901  ends at no ida</div>
+
+
+
+</body> 
+</html>
